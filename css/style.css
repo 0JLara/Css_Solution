@@ -1,0 +1,126 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 175%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+p.text {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  border: 1px ;
+}
+/*Colors of the titles*/
+p.title1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(52, 103, 211);
+  font-size: 125%;
+  border: 1px solid #000000 ;
+  margin: 0px;
+  width: 25%;
+  text-align: center;
+}
+
+p.title2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(6, 110, 21);
+  font-size: 125%;
+  border: 1px solid #000000 ;
+  margin: 0px;
+  width: 25%;
+  text-align: center;
+}
+
+p.title3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(168, 6, 6);
+  font-size: 125%;
+  border: 1px solid #000000 ;
+  margin: 0px;
+ width: 25%;
+  text-align: center;
+}
+
+.container{
+    position: relative;
+    border: 1px solid #000000 ;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+/*Giving colors to the div container */
+.colors{
+ background-color: rgb(174, 173, 171);
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+
+  .col-lg-4{
+    float: left;
+    position: relative;
+    border: 1px ;
+    margin: 10px;
+    flex: 1;
+   
+    
+  }
+
+
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+   .col-md-6 {
+     float:left;
+    position: relative;
+    border: 1px solid #000000 ;
+    margin: 10px;
+    flex: 1;
+  }
+  
+}
+
+/********** Medium devices whit full space **********/
+@media (min-width: 768px) and (max-width: 991px) {
+.col-mde-6 {
+    float: left;
+    border: 1px;
+    margin: 10px;
+    width: 100%;
+    
+  }
+
+  
+}
+
+/********** Smartphones-Devices **********/
+@media (max-width: 767px) {
+.col-ch-12 {
+    float: left;
+    border: 1px;
+    margin: 10px;
+    width: 100%;
+  }
+
+  
+}
+
